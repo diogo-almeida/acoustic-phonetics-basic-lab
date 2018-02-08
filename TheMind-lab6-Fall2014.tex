@@ -1,0 +1,451 @@
+\documentclass{article}
+\title{The Mind, Fall 2014\\ Lab 6: Acoustic Measurement and Phonetic Identification Experiments}
+\author{Instructor: Diogo Almeida}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{apacite}
+\usepackage{paralist}
+\usepackage{tipa}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{%
+	pdftitle={Lab 6 - The Mind - Acoustic Measurement and Phonetic Identification},
+	pdfauthor={Diogo Almeida},
+	pdfkeywords={acoustics, acoustic phonetics, VOT, formant transitions, consonants, acoustic correlates, segments, nyuad, the mind, tutorial},
+	breaklinks,
+	bookmarksnumbered,
+	bookmarksopen,
+	pdfpagemode=UseOutlines,
+	pdfstartview={FitH},
+	urlcolor=cyan,
+	linkcolor=blue,
+}%
+
+\newcommand{\soft}[1]{\textsf{#1}}
+\newcommand{\filefmat}[1]{\texttt{#1}}
+\newcommand{\printurl}[1]{\texttt{#1}}
+\newcommand{\softmenu}[1]{\texttt{#1}}
+\newcommand{\doscommand}[1]{\texttt{#1}}
+%
+\newcommand{\MSExcel}{\soft{Microsoft\texttrademark{} Excel}} 
+\newcommand{\OpOff}{\soft{LibreOffice}}
+\newcommand{\GDocs}{\soft{GoogleDocs Spreadsheets}}
+\newcommand{\Praat}{\soft{Praat}}
+\newcommand{\PsyX}{\soft{Psyscope}}
+\newcommand{\tform}{\soft{TreeForm}}
+%
+%
+% These variables change every year!!
+\newcommand{\deadline}{\emph{Thursday, November 20th, by 11:59 pm}}
+\newcommand{\labfolder}{\emph{Lab06-Fall2014}}
+%
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\section{Overview}
+
+This is the sixth lab of the semester\footnote{The English sounds used in the lab were generated using a speech synthesizer by Prof. Colin Phillips, (University of Maryland, College Park); the Russian sounds are computer--edited natural speech samples, created by Prof. Nina Kazanina (University of Bristol, UK). The experiments in this lab are run using \Praat{} scripts adapted from the original \PsyX{} ones created by Prof. Phillips and improved by Dr. Henny Yeung (Universit\'{e} Paris Descartes) and Prof. Brian Dillon (University of Massachusetts, Amherst). The instructions for this lab are a lightly modified version from the original set of instructions created by Prof. Phillips for a lab in his graduate course ``Introduction to Psycholinguistics''.}. In this lab you will be a participant in a series of short experiments on speech perception, and you will analyze the data that you generate in the experiments. The goal of the lab is to provide experience with:
+
+\begin{itemize}
+\item Effects of native language on auditory perception
+%\item Acoustic vs. phonological encoding of sounds
+\item Basic analysis and presentation of judgment and reaction time data.
+\end{itemize}
+
+The experiments in the lab are based on classic identification paradigms that are widely used in the speech perception literature. The lab consists of a number of steps:
+
+\begin{enumerate}
+\item Running the Experiments
+\item Analyzing the Data; analysis using PivotTables
+\item Graphing the Data
+\end{enumerate}
+
+The deadline for the write--up is: \deadline{}.
+
+%
+% Part 1
+%
+
+\section{Part 1: Finding and measuring acoustic correlates of voicing in stop consonants}
+
+Have you ever wondered what the difference is between the sounds of your language? For instance, what distinguishes [pa] from [ba]? Try saying [pa] and [ba] with your index and middle fingers on your throat. Notice the difference? Your vocal chords vibrate more when you articulate the latter than when you articulate the former. The difference between the two sounds seems to be then whether or not your vocal chords vibrate when you articulate the sound. Phonologists call this dimension ``voicing''. A consonant is therefore ``voiced'' when the vocal chords vibrate during its production, and ``unvoiced'' when they do not. What you are going to do next is find out how we can identify and measure this dimension acoustically.
+
+Locate and open the sound file \filefmat{thedot\_thetot.wav}, which contains the recording of a native speaker of English\footnote{Again Bill Idsardi, whose help is much appreciated!} uttering \emph{the dot, the tot}.
+
+Open this file on \Praat{} (\softmenu{Read} $>$ \softmenu{Read from file\ldots}) and get the \softmenu{View \& Edit} window opened. It should look like figure~\ref{step1VOT}.
+
+\begin{figure}[!tbp]
+\caption{\Praat{} -- Spectrogram of \emph{the dot, the tot}}
+\label{step1VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot1}
+	\end{center}
+\end{figure}
+
+\paragraph{Write--up:} Can you see the difference between the voiced (\emph{dot}) and unvoiced (\emph{tot}) consonants? What is it? (Tip: you should look at the waveform as well, since it is also informative). Once you have figured this one out and written it up, move on.
+
+\paragraph{Write--up:} The difference you observed between the two consonants ([d] and [t]) is called the ``burst'', and it is the flow of air following the release of the stop. Notice how it has energy spread over a wide range of frequencies (the big relatively uniform grayish area before the vowel), and how it is especially salient for [t]; [d] has barely any visible burst on the display. The time between the onset of the burst (i.e., the stop release) and the onset of voicing (in this case, the vowel) receives the name of Voice Onset Time, or simply VOT. Since this seems to be the acoustic cue that sets voiced and unvoiced stop consonants apart, we are going to be measuring it.
+
+Your task now is to open the files containing the recordings of a different native speaker of American English saying the two words (\emph{the dot, the tot}) and measure the VOT of both consonants.
+
+Here's how you do it. First, zoom in in the \emph{the tot} utterance, as shown in figure~\ref{step2VOT}. Now, try to find and select the chunk of time between the onset of the burst and the onset of the vowel, as shown in figure~\ref{step3VOT}. 
+\begin{figure}[!tbp]
+\caption{\Praat{} -- Spectrogram of \emph{the dot, the tot} -- zooming in}
+\label{step2VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-zoom}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!tbp]
+\caption{\Praat{} -- Spectrogram of \emph{the dot, the tot} -- Measuring the VOT of [t]}
+\label{step3VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-measuring-unvoiced}
+	\end{center}
+\end{figure}
+
+Once you are confident in your selection, go to \softmenu{Query} $>$ \softmenu{Get selection length}, and copy and paste the value you get into a spreadsheet, as shown in figure~\ref{step4VOT} --- notice the little trick to transform the measurements from seconds to miliseconds.
+
+\begin{figure}[!tbp]
+\caption{\MSExcel{} -- Saving your measurements}
+\label{step4VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-Excel01}
+	\end{center}
+\end{figure}
+
+Now you should try to measure the VOT of [d]. Unzoom from where you are (\softmenu{View} $>$ \softmenu{Show all}) and zoom in on the first utterance. As you can see in figure~\ref{step5VOT}, the VOT is much smaller than the one for [t]. In fact, it is very possible you will need to zoom in some more in your own recordings to see the burst at all, since the quality of the recording will probably not be as good. Once you are satisfied with your selection, get the values into the spreadsheet.
+
+\begin{figure}[!tbp]
+\caption{\Praat{} -- Spectrogram of \emph{the dot, the tot} -- Measuring the VOT of [d]}
+\label{step5VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-measuring-voiced}
+	\end{center}
+\end{figure}
+ 
+Try to get the values of the 15 repetitions files. By the end, your spreadsheet should look something like figure~\ref{step6VOT}.
+
+\begin{figure}[!tbp]
+\caption{\MSExcel{} -- What your spreadsheet should look like}
+\label{step6VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-Excel03}
+	\end{center}
+\end{figure}
+
+\paragraph{Write--up:} Notice the time--bins (0--10, 10--20, \dots{}, 90--100) on the bottom of the spreadsheet, with two empty columns, one under [t] and one under [d]. Your task now is to populate these columns with the counts of how many observations you had in each time--bin. For instance, if you had two [t] VOTs falling into the bin 60--70ms, then you should input ``2'' on the column ``[t]'' next to the bin ``60--70''. Once you are done, you should plot a bar graph of the data you collected, with the time--bins as the x--axis and the counts on the y--axis, as shown in figure~\ref{step7VOT}. What can you conclude from your graph? Does VOT constitute a good acoustic cue to differentiate voiced and unvoiced stops?
+
+\begin{figure}[!tbp]
+\caption{\MSExcel{} -- Plotting the VOT bar graph}
+\label{step7VOT}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{VOT-thedotthetot-Excel04}
+	\end{center}
+\end{figure}
+ 
+\section{What you need to write up}
+
+All the parts marked as \emph{Write--up} in the instructions above should be incorporated in your lab write--up, together with the plots they require. Try to articulate your impressions and results the best you can, in full coherent sentences (no bullets, please).
+
+%
+% Part 2
+%
+ 	
+\section{Part 2: Running the Speech Perception Lab on the acoustic correlates of voicing in stop consonants}
+
+\subsection{Description of Experiments}
+
+There are \emph{two} short experiments on speech perception in this lab. You will run them on yourself, then analyze your own data.
+
+The experiments examine your perception of sounds from two languages: \emph{English} and \emph{Russian}. One experiment focus on the contrast between voiced /d/ and voiceless aspirated /t/ found in English (and many other languages). The other experiment focus on the contrast between the voiced /d/ and voiceless unaspirated /t/ sounds of Russian (and many other languages).
+
+The experiments examine performance on a simple task: \emph{identification}. In this task, you hear sounds individually and must decide which of two categories the sound belongs to.
+
+The two experiments are:
+
+\begin{enumerate}
+\item DT identification
+\item Russian identification
+\end{enumerate}
+
+\subsection{Setting up the Experiment}
+
+\Praat{}, the program we are going to use to run this lab, is cross--platform, free and open source software, and therefore should run on any computer you might have access to. You can download the lab files from the Classes website.
+
+\subsection{Headphones \& volume}
+
+In order to improve the sound quality of the sounds that you are listening to (and in order to avoid driving the person sitting next to you crazy) you should listen to the sounds through headphones. Please don't run the experiments without headphones, especially if you are in a public space! Also, you'll find that the sound experiments are easier if you're listening through headphones.
+
+%\paragraph{Important:} If you don't have headphones you can use at home, you can borrow them from the library at the DTC.
+
+\subsection{Opening the experiments}
+
+First check that you have the latest  version of \Praat{}  installed on the computer that you are using. If not, download it from the \href{http://www.praat.org/}{\Praat{} web site}.
+
+The first step is to open \Praat{}. You should see two windows, \emph{\Praat{} Objects}, and \emph{\Praat{} Picture}. You might also get a message box complaining that certain fonts were not identified in the system. You can ignore the warning and close the \emph{\Praat{} Picture} window.
+
+Next, make sure you have already downloaded the lab folder from Classes. All the files needed for the lab can be found in the folder \labfolder{}. Once you have started \Praat{} and downloaded and uncompressed the lab folder, you are ready to start.
+
+% IMAGE 1
+\begin{figure}[!tbp]
+\caption{Open the experiment file}
+\label{readfromfile}
+	\begin{center}
+		\includegraphics[width=\textwidth]{readfromfile}
+	\end{center}
+\end{figure}
+
+\section{Order of experiments}
+%
+%There are 2 short experiments in this lab. One way of running the experiment would be to have all participants run through the two experiments in exactly the same order. However, in order to exclude the possibility that any differences in the results could be due to the order in which the conditions were run (e.g., subjects get more tired, or more experienced, over the course of the experiment), it is standard to use a different order of conditions across participants. We will mix orderings of presentation as follows:
+
+We will start with the English experiment first, and will do the Russian experiment second.
+
+%\begin{description}
+%\item[Born in Jan/Feb/Mar/Jul/Aug/Sep?] ID-English; ID-Russian
+%\item[Born in Apr/May/Jun/Oct/Nov/Dec?] ID-Russian; ID-English
+%\end{description}
+
+\subsection{Practice}
+
+Once you have identified the experiment you will perform first, go back to \Praat{} and find the \softmenu{Open} $>$ \softmenu{Read from file\ldots} (figure~\ref{readfromfile}) menus. Select the corresponding file (either \filefmat{ID--English.txt}, or \filefmat{ID--Russian.txt}) of the experiment you will be running. You will notice two objects now appear on your \emph{\Praat{} Objects} window (figure~\ref{runexperiment}). In order to start the experiment, you need to make sure that both objects are selected, and then hit the \softmenu{Run} button. In order to help you get familiarized with the task required of you, a brief practice session will be performed before proceeding to the actual experiment.
+
+% IMAGE 2
+\begin{figure}[!tbp]
+\caption{Start the experiment}
+\label{runexperiment}
+	\begin{center}
+		\includegraphics[width=\textwidth]{runexperiment}
+	\end{center}
+\end{figure}
+
+Once you click the \softmenu{Run} button, you will see a window pop--up, with the instructions for the experiment (figure~\ref{experimentwindow}). Once you are ready to start the practice session, you can click with the mouse cursor on the experimental window.
+
+% IMAGE 3
+\begin{figure}[!tbp]
+\caption{Experiment window}
+\label{experimentwindow}
+	\begin{center}
+		\includegraphics[width=\textwidth]{experimentwindow}
+	\end{center}
+\end{figure}
+
+\paragraph{Important:} If you find that there is no beep when you press the response key, and the experiment does not immediately proceed to the next trial, this means that your response is not being recorded properly. Make sure you \emph{do not have the caps lock key pressed!} If the caps lock is accidentally set to ``on'', your response will not be detected properly, and you won't be able to run the experiment.
+
+In addition to familiarizing yourself with the task, you should use the practice session to check whether the sounds are being presented at an appropriate volume. Once you have satisfied yourself that the task is clear and the sound volume is good, you are ready to run the experiment on yourself for real.
+
+\section{Running the experiments}
+
+After the practice session, the experimental session will start automatically. The instructions will appear on screen again. Make sure you read them, and click on the screen when you are ready to start.
+
+In the identification experiments, you will hear 100 sounds, in two blocks. It will take around 15 minutes to run both experiments (i.e., English and Russian). Feel free to take breaks when they are offered in the middle of the experiment, or in between two experiments, in case you get too tired. You will perform more consistently if you are not tired. 
+
+\section{Completing the experiment}
+
+Once you are done with the experiment, you will need to make sure you record your data into a file. First, go back to the~\emph{\Praat{} Objects} window, and select only the experimental session (i.e., deselect the practice part), as shown in figure~\ref{gettingresults01}, and then press the button \softmenu{Extract results}. This will add another object to the window (figure~\ref{gettingresults02}). Make sure you select it, and then click on the \softmenu{Collect to Table} button. You should now see a fourth object in the~\emph{\Praat{} Objects} window (figure~\ref{gettingresults03}). Make sure you select it, and go to \softmenu{Save} $>$ \softmenu{Save as comma-separated file\ldots} (see figure~\ref{savingresults}), and save it to disk (remember to keep the \filefmat{.csv} extension).
+
+% IMAGE 4
+\begin{figure}[!tbp]
+\caption{Selecting only the data from the experiment to save.}
+\label{gettingresults01}
+	\begin{center}
+		\includegraphics[width=\textwidth]{gettingresults01}
+	\end{center}
+\end{figure}
+
+% IMAGE 5
+\begin{figure}[!tbp]
+\caption{Results object.}
+\label{gettingresults02}
+	\begin{center}
+		\includegraphics[width=\textwidth]{gettingresults02}
+	\end{center}
+\end{figure}
+
+% IMAGE 6
+\begin{figure}[!tbp]
+\caption{Table object.}
+\label{gettingresults03}
+	\begin{center}
+		\includegraphics[width=\textwidth]{gettingresults03}
+	\end{center}
+\end{figure}
+
+You can now analyze the results using any spreadsheet or similar program (e.g. \MSExcel{}, \OpOff{}, \GDocs{}), on any computing platform (Mac, PC, Linux). 
+
+% IMAGE 7
+\begin{figure}[!tbp]
+\caption{Saving the results.}
+\label{savingresults}
+	\begin{center}
+		\includegraphics[width=\textwidth]{savingresults}
+	\end{center}
+\end{figure}
+
+\subsection{Running the second experiment}
+
+Once you have completed the first experiment and made sure you saved your data, you should select all objects in the \emph{\Praat{} Objects} window and remove them by clicking on the \softmenu{Remove} button at the bottom of the window.
+
+You can now run the second experiment by repeating the same steps laid out above. Do not forget to save your data at the end.
+
+\section{Analyzing the speech perception lab results}
+
+Having run yourself as a participant in the experiments, your task now is to analyze your data from the experiments. This is best done using a spreadsheet program such as \MSExcel{}, \OpOff{} or \GDocs{}. Most spreadsheet programs also allow you to plot graphs. Since the \Praat{} data files are plain text files, they can be read on any computer platform. If they were saved with \filefmat{.csv} extension, you might be able to open them directly by double--clicking on them. If that does not work, try opening your spreadsheet program and opening the data file from within them (normally something like \softmenu{File $>$ Open} would do).
+
+\paragraph{IMPORTANT:} The file format \filefmat{.csv} is a pure text file. It is very useful to store data, but once you open it on a spreadsheet program and start manipulating it, \emph{you need to save it in the native spreadsheet file format}, or else you will lose all your results. Therefore, you are strongly advised to immediately save a copy of your data as a \filefmat{.xsl}, \filefmat{.xlsx} (\MSExcel{}'s native format) or \filefmat{.ods} (\OpOff{}'s native format) files \emph{before} you start your data analysis, so you won't accidentally lose your work. Finally, remember to save your work often, as computer programs often crash, and data may be lost when that happens.
+
+\subsection{Objectives (and what you need to turn in)}
+
+\paragraph{Identification tasks:} Graph \emph{judgments} and \emph{reaction times} for both the English voicing contrast and the Russian voicing contrast\footnote{if you are doing this manually rather than using Pivot Tables, you are taking \emph{far} longer than you need to.}.
+
+\paragraph{Discussion:} Write-up a description and analysis of your results. What differences, if any, do you observe between your performance with the English and the Russian contrasts? Do you observe any patterns in your reaction times ---- do shorter reaction times always correspond to more accurate judgments? For the patterns that you observe in the data, try to suggest explanations.
+
+In displaying the results, there is no specific expectation for how this should be presented --- you should figure out for yourself how your findings can be presented most clearly. However, I expect that line graphs are most likely to yield easy--to--read results.
+
+\paragraph{What I need from you:} I will need a text document containing (i) your write--up and (ii) the graphs for your data. I will also need a copy of your data files and of your spreadsheet file. These should be compressed into a single file and e-mailed to the instructor by \deadline{}.
+
+%\paragraph{Note:} You are welcome to work with other students in the class on analysis of the data. However, you should submit your lab report based upon your own data.
+
+\subsection{Analyzing the data}
+
+Before you start, you are \emph{strongly advised} to keep a back--up copy of your original data files, in case you accidentally lose or corrupt data at some point in your analysis, and need to go back to your original files.
+
+\subsubsection{Preprocessing the data}
+
+When you open your results file, you should see something like figure~\ref{excel-results-file}. You will need to preprocess the results a little before you can plot them. The first thing you need to do is create a column called \emph{IsD?}, in which you will transform \emph{D} responses into 1s and \emph{T} responses into 0s. The file \filefmat{Diogo.ID-English.Results.xlsx} contains an example of what that looks like, and the formula you need to use to perform the transformation. I will leave the details for you to figure out how to use a formula in the spreadsheet. Alternatively, you can use the \emph{Replace} command to do this.
+
+% IMAGE 8
+\begin{figure}[!tbp]
+\caption{Data before preprocessing}
+\label{excel-results-file}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{excel-results-file}
+	\end{center}
+\end{figure}
+
+\subsubsection{Analyzing results using PivotTables}
+
+Once you have created the column \emph{IsD?}, or found some other way to transform \emph{D} answers into 1s and \emph{T} answers into 0s, you are ready to go to the next step. The instructions that follow are designed for \MSExcel{}, but there are similar procedures in \OpOff{} and \GDocs{}.
+
+\begin{enumerate}
+\item After you have converted letter responses (e.g., ``D'' and ``T'') to numbers, your file will look something like figure~\ref{isdcolumn}.
+
+% IMAGE 9
+\begin{figure}[!tbp]
+\caption{Data after preprocessing}
+\label{isdcolumn}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{isdcolumn}
+	\end{center}
+\end{figure}
+
+\item Select your data cells and then request a \emph{PivotTable} report using the command under the \emph{Data} menu (see figure~\ref{pivot1}).
+
+% IMAGE 10
+\begin{figure}[!tbp]
+\caption{PivotTable Menu (on \MSExcel{})}
+\label{pivot1}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{lab06_pivot01}
+	\end{center}
+\end{figure}
+
+% IMAGE 11
+\begin{figure}[!tbp]
+\caption{PivotTable (on \MSExcel{})}
+\label{pivot2}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{lab06_pivot02}
+	\end{center}
+\end{figure}
+
+
+\item Once you click on  \emph{PivotTable }, you will be taken to a new spreadsheet (depending on your version of \MSExcel{}, you might be still on the same spreadsheet), with a \emph{Report Filter} and a window called \emph{PivotTable Builder} (figure~\ref{pivot2}). Make sure you select only the \emph{stimulus} and \emph{IsD?} fields. The former should also be in the field \emph{Row Labels} and the latter in \emph{Values}, with the formula being Sum (\emph{Sum of IsD?}). This table basically counts how many D's (or 1's) you had for each stimulus type.
+
+\item Once you have the table, you can create the actual table that you will be plotting. Next to the pivot table, create a column called \emph{VOT}, and another one called \emph{\%D}. Under \emph{VOT}, insert the VOT value corresponding to each stimulus type (see figure~\ref{pivot3} and table~\ref{conditions}), and under \emph{\%D}, calculate the percentage of \emph{D} responses from the count data in the Pivot Table (hint: divide the count by 10, and change the format of the cell to be in percentage; cf. figure~\ref{pivot3}). Note that you might have to reorganize the order of the table for the plotting in the Russian ID experiment (see figure~\ref{graph01} and the file \filefmat{Diogo.ID-Russian.Results.xlsx} for an example).
+
+% IMAGE 12
+\begin{figure}[!tbp]
+\caption{Creating the table for plotting.}
+\label{pivot3}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{lab06_pivot03}
+	\end{center}
+\end{figure}
+
+\item Do the same for the reaction time data. You will need to create another PivotTable, but instead of using \emph{IsD?} as a variable, you will use \emph{reactionTime}, and instead of using the count (Sum) of responses, you will use the Average (the goal is after all to calculate the average reaction time (RT) per stimulus condition).
+
+\end{enumerate}
+
+\subsubsection{Graphing}
+
+Once you have selected the data that you want to graph (see figure~\ref{graph01}), you can click on the Line button. This will bring up a window of choices, so select the type of line graph you want. This will generate a basic graph, like the ones in figure~\ref{dataplot}\footnote{These graphs are from old versions of \MSExcel{}, yours might look slightly different.}.
+
+% IMAGE 13
+\begin{figure}[!tbp]
+\caption{Chart menu in \MSExcel{}.}
+\label{graph01}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{lab06_graph01}
+	\end{center}
+\end{figure}
+
+% IMAGE 14
+\begin{figure}[!tbp]
+\caption{\%d intentification per condition graph and reaction time per condition graph}
+\label{dataplot}
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{percentd}
+		\includegraphics[width=0.45\textwidth]{rtgraph}
+	\end{center}
+\end{figure}
+
+\subsection{Stimuli}
+
+In the data files for the identification experiments, the sounds are listed by condition name. Table~\ref{conditions} shows the condition names, and what sounds they represent.
+
+The \emph{English} stimuli are taken from a computer synthesized continuum, created using the Klatt synthesizer for Macintosh. The only property of the sounds that varies is the voicing onset time (VOT) --- i.e. the time lag between the release of the stop closure and the onset of voicing\footnote{VOT was measured in the Part 1 of this lab.}. The continuum spans times from 0msec (d\ae{}) to 60ms (t\ae{}).
+
+The Russian stimuli are based on natural recordings from a native speaker, but were subsequently computer--edited to create a continuum. The Russian continuum includes sounds with a voicing lag, i.e. the voicing onset follows the consonant release, as in the English sounds, and sounds with a voicing lead, i.e. voicing precedes the consonant release. Voicing lead sounds are listed in table~\ref{conditions} as having negative VOT values. Unlike English speakers, Russian speakers tend to classify sounds with positive VOTs, and sounds with negative VOTs below $\sim$15ms as voiceless /t\ae{}/, and sounds with greater negative VOTs as voiced /d\ae{}/. Therefore, depending on where the VOT boundary of native language is\footnote{Remember that you mapped out the VOT boundary in production for one American English speaker in Part 1! Do you remember what it was?}, it is entirely possible that the Russian sounds will all sound alike to you!
+
+% Table
+\begin{table}[!tbp]
+\caption{Codes of stimuli in the 2 experiments and what they mean. For the English ID  experiment, the numbers before \emph{dt} mean the VOT value used. For example, emph{20dt}' means a synthesized token with a 20 ms VOT. For the Russian ID experiment, the numbers mean the VOT value used. For example, \emph{da+10} means a synthesized token with a $10$ ms VOT, while \emph{da20} means a synthesized token with a $-20$ms VOT (a negative VOT means that voicing starts before the consonant release; this is sometimes called `pre--voicing')}.
+\label{conditions}
+	\begin{tabular}{cccc}
+\\	\toprule
+English ID & VOT & Russian ID & VOT\\
+\midrule
+00d & $00$ ms & da44   & $-44$ ms \\
+10dt & $+10$ ms & da36   & $-36$ ms    \\
+20dt & $+20$ ms & da28   & $-28$ ms     \\
+24dt & $+24$ ms & da20   & $-20$ ms   \\
+28dt & $+28$ ms & da18   & $-18$ ms   \\
+32dt & $+32$ ms & da16   & $-16$ ms   \\
+36dt & $+36$ ms & da14   & $-14$ ms   \\
+40dt & $+40$ ms & da06   & $-6$ ms   \\
+50dt & $+50$ ms & da+02   & $+2$ ms   \\
+60dt & $+60$ ms & da+10   & $+10$ ms \\
+        \bottomrule
+        	\end{tabular}
+\end{table}
+
+\subsection{Note on graphing data}
+
+In the identification experiment, you will probably want to plot sound category (x--axis), against responses (e.g. \% [d\ae{}] responses). Remember that in this study you simply made judgments about \emph{individual}  sounds. \emph{There is no right or wrong answer about which category each sound belongs to}, but your judgments probably were quite consistent.
+ 
+The files \filefmat{Diogo.ID-English.Results.xlsx} and \filefmat{Diogo.ID-Russian.Results.xlsx} provide examples of what your final graphs could look like. Regardless of what graphic display you end up preferring, it is important that you remember to label the axes of your graphs! I will leave the details on how to do this for you to figure out.
+
+\paragraph{Important:} Do not worry if your graphs show that you have a different VOT boundary for voiced and voiceless consonants than the ones you will find in the two files I am providing as examples (\filefmat{Diogo.ID-English.Results.xlsx} and \filefmat{Diogo.ID-Russian.Results.xlsx}). The data contained in them are from me. I am a native speaker of Brazilian Portuguese, which has a lower VOT boundary than American English. If your VOT boundary looks different, it might simply reflect the VOT boundary of your native language.
+
+\section{Reminder: Deadline and what you need to turn in.}
+
+\paragraph{What I need from you:} I will need a text document containing (i) your write--up and (ii) the graphs for your data. I will also need a copy of your data files and of your spreadsheet file. These should be compressed into a single file and e-mailed to me by \deadline{}.
+
+\end{document}
