@@ -24,4 +24,16 @@
 \contentsline {paragraph}{Putting the graph in context, part II.}{22}{section*.19}
 \contentsline {subsection}{\numberline {2.3}What you should hand in.}{24}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Deadline}{24}{subsection.2.4}
-\contentsline {section}{References}{24}{section*.20}
+\contentsline {section}{\numberline {3}Part 1B: Finding and measuring acoustic correlates of stop consonants}{24}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview}{24}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Acoustic correlates of place of articulation in stop consonants}{25}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Before you start}{25}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}aba ada aga}{25}{subsubsection.3.2.2}
+\contentsline {paragraph}{Write--up:}{26}{section*.20}
+\contentsline {subsubsection}{\numberline {3.2.3}ibi idi igi}{26}{subsubsection.3.2.3}
+\contentsline {paragraph}{Write--up:}{26}{section*.21}
+\contentsline {subsubsection}{\numberline {3.2.4}ubu udu ugu}{27}{subsubsection.3.2.4}
+\contentsline {paragraph}{Write--up:}{27}{section*.22}
+\contentsline {subsubsection}{\numberline {3.2.5}idi ada udu}{27}{subsubsection.3.2.5}
+\contentsline {paragraph}{Write--up:}{27}{section*.23}
+\contentsline {section}{References}{27}{section*.24}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  10 FEB 2018 23:43
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  11 FEB 2018 00:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -916,9 +916,13 @@ File: ./figures/Praat-24-Ellipses.png Graphic file (type QTm)
 File: ./figures/Praat-25-Change-color.png Graphic file (type QTm)
 
 <use  "./figures/Praat-25-Change-color.png" > [22] [23])
+(./Lab01-04-Part1B-Spring2018.tex [24]
+File: ./figures/Praat_B-01-aba-ada-aga.png Graphic file (type QTm)
+
+<use  "./figures/Praat_B-01-aba-ada-aga.png" > [25] [26])
 (./Spring2018-PSYCH-UH-3516EQ-Lab01.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
- [24]
+ [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
 
 (./Spring2018-PSYCH-UH-3516EQ-Lab01.aux)
@@ -931,12 +935,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 18424 strings out of 493005
- 345214 string characters out of 6134596
+ 18436 strings out of 493005
+ 345471 string characters out of 6134596
  421009 words of memory out of 5000000
- 22209 multiletter control sequences out of 15000+600000
+ 22217 multiletter control sequences out of 15000+600000
  7464 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 37i,7n,66p,10434b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,66p,10434b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Spring2018-PSYCH-UH-3516EQ-Lab01.pdf (24 pages).
+Output written on Spring2018-PSYCH-UH-3516EQ-Lab01.pdf (27 pages).
