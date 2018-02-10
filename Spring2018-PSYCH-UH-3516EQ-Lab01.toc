@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Overview}{3}{section.1}
+\contentsline {section}{\numberline {2}Part 1A: Vowel Formant Analysis}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Overview}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}What you will need}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}The sound files}{4}{subsubsection.2.2.1}
+\contentsline {paragraph}{How to select the sound files to analyze?}{5}{section*.3}
+\contentsline {subsubsection}{\numberline {2.2.2}Using \textsf {Praat}{} to measure the formant values}{5}{subsubsection.2.2.2}
+\contentsline {paragraph}{Opening \textsf {Praat}{}.}{5}{section*.4}
+\contentsline {paragraph}{Loading a file.}{5}{section*.5}
+\contentsline {paragraph}{Looking at the spectrogram.}{8}{section*.6}
+\contentsline {paragraph}{Making the measurements.}{8}{section*.7}
+\contentsline {paragraph}{Saving Formant values to a spreadsheet.}{11}{section*.8}
+\contentsline {paragraph}{CSV.}{11}{section*.9}
+\contentsline {paragraph}{IPA symbols for the vowels.}{11}{section*.10}
+\contentsline {paragraph}{Example \texttt {csv} file.}{12}{section*.11}
+\contentsline {subsubsection}{\numberline {2.2.3}Plotting the Formant values}{12}{subsubsection.2.2.3}
+\contentsline {paragraph}{Using the plot functions of \textsf {Praat}{}.}{12}{section*.12}
+\contentsline {paragraph}{Inspecting your data.}{12}{section*.13}
+\contentsline {paragraph}{Plotting your data.}{13}{section*.14}
+\contentsline {paragraph}{A note on the range of the axes.}{15}{section*.15}
+\contentsline {paragraph}{Saving your graph.}{15}{section*.16}
+\contentsline {paragraph}{Interpreting the graph.}{17}{section*.17}
+\contentsline {paragraph}{Putting the graph in context, part I.}{18}{section*.18}
+\contentsline {paragraph}{Putting the graph in context, part II.}{22}{section*.19}
+\contentsline {subsection}{\numberline {2.3}What you should hand in.}{24}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Deadline}{24}{subsection.2.4}
+\contentsline {section}{References}{24}{section*.20}

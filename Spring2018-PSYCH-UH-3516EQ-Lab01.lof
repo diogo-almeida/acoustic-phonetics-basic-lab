@@ -1,0 +1,24 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces \textsf {Praat}{} -- Main Windows}}{6}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces \textsf {Praat}{} -- Reading from a file}}{6}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces \textsf {Praat}{} -- Object in List}}{7}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces \textsf {Praat}{} -- View and Edit Window}}{8}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces \textsf {Praat}{} -- View and Edit Window: Selection of part of the waveform for inspection}}{9}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces \textsf {Praat}{} -- Getting the Formants automatically -- Selecting the \emph {steady state} of the vowel}}{9}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces \textsf {Praat}{} -- Getting the Formants automatically -- Automatically calculate F1}}{10}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces \textsf {Praat}{} -- Getting the Formants automatically -- Getting the mean F1 value over the vowel's \emph {steady state}}}{10}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces \textsf {Microsoft\texttrademark {} Excel}{} -- Saving the Formant values of each recording}}{11}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces \textsf {Praat}{} -- Read your data from \emph {comma separated value} file}}{13}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces \textsf {Praat}{} -- Newly created \emph {Table} object in the \texttt {Objects} window}}{14}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces \textsf {Praat}{} -- Visually inspecting Table object}}{14}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \textsf {Praat}{} -- Visually inspecting Table object}}{15}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \textsf {Praat}{} -- Scatterplot dialog box}}{16}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \textsf {Praat}{} -- Scatterplot result}}{16}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces \textsf {Praat}{} -- Erasing plots from Picture window}}{17}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces \textsf {Praat}{} -- Loading Peterson \& Barney 1952 data}}{19}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces \textsf {Praat}{} -- Inspecting Peterson \& Barney 1952 data}}{19}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces \textsf {Praat}{} -- Extracting subset of data in the Peterson \& Barney 1952 dataset}}{20}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces \textsf {Praat}{} -- Extracting the data from the females in the Peterson \& Barney 1952 data}}{20}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces \textsf {Praat}{} -- Drawing ellipses in F1--F2 space for each vowel category in the Peterson \& Barney 1952 data -- data from females only}}{21}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces \textsf {Praat}{} -- Drawing 2 Standard Deviation ellipses in F1--F2 space for each vowel category in the Peterson \& Barney 1952 data -- data from females only}}{21}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces \textsf {Praat}{} -- Ellipses capturing 2 standard deviations in the F1--F2 space for each vowel category in the Peterson \& Barney 1952 data -- data from females only}}{22}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces \textsf {Praat}{} -- Changing the plot color for overlaying a new plot on top of an existing one.}}{23}{figure.24}

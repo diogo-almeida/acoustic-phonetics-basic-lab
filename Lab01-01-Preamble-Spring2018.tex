@@ -6,7 +6,7 @@
 \usepackage{fontspec}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage{apacite}
+%\usepackage{apacite} ->https://tex.stackexchange.com/questions/68698/bibliography-issue-apacite-argument-of-cite-has-an-extra tells me that apacite needs to be loaded *after* hyperref!
 \usepackage{paralist}
 \usepackage{tipa}
 \usepackage[colorlinks]{hyperref}
@@ -21,13 +21,15 @@
 	pdfstartview={FitH},
 	urlcolor=cyan,
 	linkcolor=blue,
+	citecolor=black
 }%
+\usepackage{apacite}
 
 %% Font specifications
-\fontspec{Hoefler Text}
-\setmainfont{Hoefler Text}
-\setsansfont{Fira Sans}[Scale=MatchLowercase]
-\setmonofont{Monaco}[Scale=MatchLowercase]
+\fontspec{PT Serif}
+\setmainfont{PT Serif}
+\setsansfont{PT Sans}
+\setmonofont{PT Mono}
 
 %%
 
@@ -38,7 +40,8 @@
 \newcommand{\doscommand}[1]{\texttt{#1}}
 
 \newcommand{\MSExcel}{\soft{Microsoft\texttrademark{} Excel}} 
-\newcommand{\OpOff}{\soft{OpenOffice}}
+\newcommand{\OpOff}{\soft{LibreOffice}}
+\newcommand{\Gsheet}{\soft{Googlesheeets}}
 \newcommand{\Praat}{\soft{Praat}}
 \newcommand{\tform}{\soft{TreeForm}}
 \begin{document}
