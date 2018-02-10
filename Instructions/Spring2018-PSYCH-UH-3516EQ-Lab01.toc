@@ -1,0 +1,50 @@
+\contentsline {section}{\numberline {1}Overview}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Deadlines and deliverables}{5}{subsection.1.1}
+\contentsline {paragraph}{Part A:}{5}{section*.3}
+\contentsline {paragraph}{Important:}{5}{section*.4}
+\contentsline {paragraph}{Parts B and C:}{5}{section*.5}
+\contentsline {section}{\numberline {2}Part 1A: Vowel Formant Analysis}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Overview}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}What you will need}{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}The sound files}{6}{subsubsection.2.2.1}
+\contentsline {paragraph}{How to select the sound files to analyze?}{7}{section*.6}
+\contentsline {subsubsection}{\numberline {2.2.2}Using \textsf {Praat}{} to measure the formant values}{8}{subsubsection.2.2.2}
+\contentsline {paragraph}{Opening \textsf {Praat}{}.}{8}{section*.7}
+\contentsline {paragraph}{Loading a file.}{8}{section*.8}
+\contentsline {paragraph}{Looking at the spectrogram.}{8}{section*.9}
+\contentsline {paragraph}{Making the measurements.}{10}{section*.10}
+\contentsline {paragraph}{Saving Formant values to a spreadsheet.}{12}{section*.11}
+\contentsline {paragraph}{CSV.}{13}{section*.12}
+\contentsline {paragraph}{IPA symbols for the vowels.}{13}{section*.13}
+\contentsline {paragraph}{Example \texttt {csv} file.}{13}{section*.14}
+\contentsline {subsubsection}{\numberline {2.2.3}Plotting the Formant values}{13}{subsubsection.2.2.3}
+\contentsline {paragraph}{Using the plot functions of \textsf {Praat}{}.}{13}{section*.15}
+\contentsline {paragraph}{Inspecting your data.}{14}{section*.16}
+\contentsline {paragraph}{Plotting your data.}{16}{section*.17}
+\contentsline {paragraph}{A note on the range of the axes.}{16}{section*.18}
+\contentsline {paragraph}{Saving your graph.}{17}{section*.19}
+\contentsline {paragraph}{Interpreting the graph.}{17}{section*.20}
+\contentsline {paragraph}{Putting the graph in context, part I.}{19}{section*.21}
+\contentsline {paragraph}{Putting the graph in context, part II.}{23}{section*.22}
+\contentsline {subsection}{\numberline {2.3}What you should hand in.}{24}{subsection.2.3}
+\contentsline {section}{\numberline {3}Part 1B: Finding and measuring acoustic correlates of stop consonants}{26}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview}{26}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Acoustic correlates of place of articulation in stop consonants}{27}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Before you start}{27}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}aba ada aga}{27}{subsubsection.3.2.2}
+\contentsline {paragraph}{Write--up:}{27}{section*.23}
+\contentsline {subsubsection}{\numberline {3.2.3}ibi idi igi}{28}{subsubsection.3.2.3}
+\contentsline {paragraph}{Write--up:}{28}{section*.24}
+\contentsline {subsubsection}{\numberline {3.2.4}ubu udu ugu}{28}{subsubsection.3.2.4}
+\contentsline {paragraph}{Write--up:}{28}{section*.25}
+\contentsline {subsubsection}{\numberline {3.2.5}idi ada udu}{28}{subsubsection.3.2.5}
+\contentsline {paragraph}{Write--up:}{29}{section*.26}
+\contentsline {subsection}{\numberline {3.3}What you need to write up}{29}{subsection.3.3}
+\contentsline {section}{\numberline {4}Part 1C: Finding and measuring acoustic correlates of voicing}{29}{section.4}
+\contentsline {subsection}{\numberline {4.1}Before you start}{29}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Overview}{29}{subsection.4.2}
+\contentsline {paragraph}{Write--up:}{30}{section*.27}
+\contentsline {paragraph}{Write--up:}{30}{section*.28}
+\contentsline {paragraph}{Write--up:}{32}{section*.29}
+\contentsline {subsection}{\numberline {4.3}What you need to write up}{32}{subsection.4.3}
+\contentsline {section}{References}{33}{section*.30}
